@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Main pages" %>
+
+<h1>Main pages</h1>
+
+<div id="main_pages">
+  <% @main_pages.each do |main_page| %>
+    <%= render main_page %>
+    <p>
+      <%= link_to "Show this main page", main_page %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New main page", new_main_page_path %>
