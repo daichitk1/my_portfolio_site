@@ -1,34 +1,30 @@
 <% content_for :title, "Main pages" %>
 <div class="main">
   <div>
-  <%= image_tag "introduction_img.png", class: "profile_img" %>
-  <h1 class="name" id="introduction">Daichi Takei</h1></div>
-  簡単な経歴
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div><div>1</div><div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-
+    <%= image_tag "introduction_img.png", class: "profile_img" %>
+    <h1 class="name" id="introduction">Daichi Takei</h1>
+  </div>
+  <div class="m-5">
+    <h2>簡単な経歴</h2>
+    <h3>学歴</h3>
+    2014年4月〜2017年3月 静岡県立韮山高校 普通科<br>
+    2018年4月〜2022年3月 茨城大学工学部情報工学科<br>
+    2022年4月〜2024年3月 電気通信大学大学院 情報理工学研究科 情報学専攻
+    <h3>職歴</h3>
+  </div>
 
   <div><h2 id="portofolio">ポートフォリオ</h2></div>
 
   <div><h2 id="information_skill">情報系スキル</h2></div>
+
   <div>
   ・言語 HTML、CSS、JavaScript、Java、Perl、Python、Ruby
   </div>
+
   <div>
   ・フレームワーク Ruby on rails
   </div>
+
   <div>
   ・経験のある開発環境 VScode、github
   </div>
@@ -45,20 +41,22 @@
         <i class="fa-brands fa-x-twitter">X</i>
       </a>
     </div>
+  
     <div>
       <a href="https://qiita.com/daichitk1" target="_blank">Qiita</a>
     </div>
+  
     <div>
       <a href="https://github.com/daichitk1" target="_blank">Github</a>
     </div>
   </div>
+
   <div><h2>受賞歴</h2>
   ・中体連県大会 800m 8位<br>
   ・ジャグリング新人戦東日本杯 3位
   </div>
 
-  <div><h2>資格</h2>
-  </div>
+  <div><h2>資格</h2></div>
   <div><h2>お問い合わせ</h2></div>
   <div id="main_pages">
     <% @main_pages.each do |main_page| %>

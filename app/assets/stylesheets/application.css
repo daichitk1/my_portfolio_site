@@ -59,3 +59,7 @@ h2:after {
   background-image: -webkit-linear-gradient(right, #2af598 0%, #009efd 100%);
   background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
 }
+
+h3 {
+  color: blue;
+}
