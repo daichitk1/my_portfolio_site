@@ -33,11 +33,13 @@
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: rgb(250, 222, 186);
   font-family: "kleeone"
   display: flex;
   justify-content: center;
 }
+
+
 
 .profile_img {
   width: 400px;
