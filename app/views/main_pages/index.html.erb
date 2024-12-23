@@ -1,9 +1,72 @@
-<p style="color: green"><%= notice %></p>
-
 <% content_for :title, "Main pages" %>
+<div id="sidebar">
+      <ul>
+        <li id="introduction"><%= link_to "自己紹介", '#introduction' %></li>
+        <li id="portofolio"><%= link_to "ポートフォリオ', '#portofolio" %></li>
+        <li id="information_skill"><%= link_to "情報系スキル", '#information_skill' %></li>
+        <li id="hobby"><%= link_to '趣味', '#hobby' %></li>
+        <li id="sns"><%= link_to 'SNS', '#sns' %></li>
+      </ul>
+    </div>
+    <div class="main">
+<div><h1 id="introduction">自己紹介</h1></div>
+簡単な経歴
+<div>1</div>
+<div>1</div>
+<div>1</div>
 
-<h1>Main pages</h1>
+<div>1</div>
+<div>1</div>
+<div>1</div>
+<div>1</div><div>1</div><div>1</div>
+<div>1</div>
+<div>1</div>
+<div>1</div>
+<div>1</div>
+<div>1</div>
+<div>1</div>
 
+
+<div><h2 id="portofolio">ポートフォリオ</h2></div>
+
+<div><h2 id="information_skill">情報系スキル</h2></div>
+<div>
+・言語 HTML、CSS、JavaScript、Java、Perl、Python、Ruby
+</div>
+<div>
+・フレームワーク Ruby on rails
+</div>
+<div>
+・経験のある開発環境 VScode、github
+</div>
+
+<div><h2 id="hobby">趣味</h2></div>
+<div>・登山</div>
+<div>・サイクリング</div>
+<div>・散歩</div>
+
+<div>
+  <h2 id="sns">SNS</h2>
+  <div>
+    <a href="https://x.com/CqbsAuCgYY51036" target="_blank">
+      <i class="fa-brands fa-x-twitter">X</i>
+    </a>
+  </div>
+  <div>
+    <a href="https://qiita.com/daichitk1" target="_blank">Qiita</a>
+  </div>
+  <div>
+    <a href="https://github.com/daichitk1" target="_blank">Github</a>
+  </div>
+</div>
+<div><h2>受賞歴</h2>
+ ・中体連県大会 800m 8位<br>
+ ・ジャグリング新人戦東日本杯 3位
+</div>
+
+<div><h2>資格</h2>
+</div>
+<div><h2>お問い合わせ</h2></div>
 <div id="main_pages">
   <% @main_pages.each do |main_page| %>
     <%= render main_page %>

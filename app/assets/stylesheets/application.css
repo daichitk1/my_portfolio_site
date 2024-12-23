@@ -8,3 +8,16 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+
+
+ .introduction-class {
+    width:300px;
+    height: 1000px;
+    background-image: url('introduction_img.png');
+  }
+
+.main {
+  margin: 0 auto;
+  width: 1200px;
+}
