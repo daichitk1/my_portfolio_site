@@ -4,7 +4,7 @@
     <%= image_tag "introduction_img.png", class: "profile_img" %>
     <h1 class="name" id="introduction">Daichi Takei</h1>
   </div>
-  <div class="m-5">
+  <div class="semi-title">
     <h2>簡単な経歴</h2>
     <h3>学歴</h3>
     2014年4月〜2017年3月 静岡県立韮山高校 普通科<br>
@@ -13,28 +13,36 @@
     <h3>職歴</h3>
   </div>
 
-  <div><h2 id="portofolio">ポートフォリオ</h2></div>
+  <div class="semi-title"><h2 id="portofolio">ポートフォリオ</h2></div>
 
-  <div><h2 id="information_skill">情報系スキル</h2></div>
+  <div class="semi-title"><h2 id="information_skill">情報系スキル</h2></div>
 
   <div>
-  ・言語 HTML、CSS、JavaScript、Java、Perl、Python、Ruby
+    <h3>プログラミング言語</h3>
+    HTML、CSS、JavaScript、Java、Perl、Python、Ruby
   </div>
 
   <div>
-  ・フレームワーク Ruby on rails
+    <h3>フレームワーク</h3>
+    Ruby on rails
   </div>
 
   <div>
-  ・経験のある開発環境 VScode、github
+    <h3>経験のある開発環境</h3>
+     VScode、github
   </div>
 
-  <div><h2 id="hobby">趣味</h2></div>
-  <div>・登山</div>
-  <div>・サイクリング</div>
-  <div>・散歩</div>
-
+  <div class="semi-title"><h2 id="hobby">趣味</h2></div>
   <div>
+    <h3><a href="https://cat-and-mountain.com/">blog</a></h3>
+    
+    <h3>登山</h3>
+    <a href="https://yamap.com/users/3228085" target="_blank"><%= image_tag "IMG_3168.png", class: "hobby_img" %></a>
+  </div>
+  <div><h3>サイクリング</h3></div>
+  <div><h3>散歩</h3></div>
+
+  <div class="semi-title">
     <h2 id="sns">SNS</h2>
     <div>
       <a href="https://x.com/CqbsAuCgYY51036" target="_blank">
@@ -51,13 +59,13 @@
     </div>
   </div>
 
-  <div><h2>受賞歴</h2>
+  <div class="semi-title"><h2>受賞歴</h2>
   ・中体連県大会 800m 8位<br>
   ・ジャグリング新人戦東日本杯 3位
   </div>
 
-  <div><h2>資格</h2></div>
-  <div><h2>お問い合わせ</h2></div>
+  <div class="semi-title"><h2>資格</h2></div>
+  <div class="semi-title"><h2>お問い合わせ</h2></div>
   <div id="main_pages">
     <% @main_pages.each do |main_page| %>
       <%= render main_page %>
