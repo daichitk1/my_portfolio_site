@@ -18,6 +18,8 @@
 
  .name {
   font-family: 'Sacramento', cursive;
+  font-size: 80px;
+  margin: 0;
  }
  .introduction-class {
     width:200px;
@@ -26,15 +28,16 @@
   }
 
 .main {
-  
-  width: 1200px;
+  width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
 body {
   background-color: rgb(250, 222, 186);
-  font-family: "kleeone"
+  font-family: "kleeone";
+  font-size: 30px;
+  width: 500px;
   display: flex;
   justify-content: center;
 }
@@ -50,7 +53,8 @@ body {
 h2 {
   position: relative;
   padding: 1rem .5rem;
-  width: 300px;
+  width: 500px;
+  font-size: 50px;
   margin: 0 auto;
 }
 
