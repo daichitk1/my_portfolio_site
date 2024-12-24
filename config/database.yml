@@ -34,7 +34,7 @@ production:
     migrations_paths: db/cache_migrate
   queue:
     adapter: postgresql # 使用しているデータベースの種類に合わせて変更
-    database: queue_database_name # 実際のデータベース名に変更
+    database: storage/production.sqlite3
     username: your_database_user
     password: your_database_password
     host: localhost # またはホスティング先のホスト名
