@@ -37,6 +37,6 @@ production:
     database: storage/production_queue.sqlite3
     migrations_paths: db/queue_migrate
   cable:
-    <<: *default
-    database: storage/production_cable.sqlite3
+    adapter: postgresql
+    database: <%= ENV['CABLE_DATABASE_URL'] || 'cable_production' %>
     migrations_paths: db/cable_migrate
