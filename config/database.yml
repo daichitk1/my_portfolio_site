@@ -32,3 +32,6 @@ production:
     <<: *default
     database: storage/production_cache.sqlite3
     migrations_paths: db/cache_migrate
+  queue:
+    <<: *default
+    database: my_app_queue_production
