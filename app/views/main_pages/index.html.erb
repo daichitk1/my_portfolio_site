@@ -1,10 +1,9 @@
 <% content_for :title, "Main pages" %>
-<div class="main">
-  <div class="introduction">
-    <div>
-      <%= image_tag "introduction_img.png", class: "profile_img" %>
-      <h1 class="name" id="introduction">Daichi Takei</h1>
-   </div>
+
+<div class="introduction">
+  <div class="top-introduction">
+    <%= image_tag "introduction_img.png", class: "profile_img" %>
+    <h1 class="name" id="introduction">Daichi Takei</h1>
     <div class="flex">
       <div>
         <a href="https://x.com/CqbsAuCgYY51036" target="_blank">
@@ -18,6 +17,12 @@
       </div>
     </div>
   </div>
+</div>
+<div class="main">
+  <div class="semi-title">
+    <h2>理想のエンジニア像</h2>
+    顧客が欲しいものを技術で実現できる幅広い知見を持ったエンジニアになりたい
+  </div>
   <div class="semi-title">
     <h2>簡単な経歴</h2>
     <h3>学歴</h3>
@@ -28,7 +33,7 @@
     2024年4月〜<br> IT企業にて4ヶ月のエンジニア研修ののち、<br>サポートチームに配属<br>
   </div>
 
-  <div class="semi-title"><h2 id="information_skill">情報系スキル</h2></div>
+  <div class="semi-title"><h2 id="information_skill">情報系スキル</h2>
 
   <div>
     <h3>プログラミング言語</h3>
@@ -52,24 +57,30 @@
      <h3>その他</h3>
      サーバー: heroku
   </div>
+  </div>
 
   <div class="semi-title"><h2 id="portofolio">ポートフォリオ</h2></div>
 
-  <div class="semi-title"><h2 id="hobby">趣味</h2></div>
-  <div>
+  <div class="semi-title">
+    <h2 id="hobby">趣味</h2>
     <h3><a href="https://cat-and-mountain.com/">blog</a></h3>
-    
     <h3>登山</h3>
     <a href="https://yamap.com/users/3228085" target="_blank"><%= image_tag "IMG_3168.png", class: "hobby_img" %></a>
-  </div>
-  <div><h3>サイクリング</h3></div>
-  <div><h3>散歩</h3></div>
-
-
-  <div class="semi-title"><h2>受賞歴</h2>
-  中学3年<br> 中体連県大会 800m 8位<br><br>
-  大学1年<br> ジャグリング新人戦東日本杯 3位
+    <h3>サイクリング</h3>
+    <h3>散歩</h3>
   </div>
 
-  <div class="semi-title"><h2>資格</h2>なし</div>
+
+  <div class="semi-title">
+    <h2>受賞歴</h2>
+    中学3年<br> 中体連県大会 800m 8位<br><br>
+    大学1年<br> ジャグリング新人戦東日本杯 3位
+    <%= image_tag "IMG_6389.jpg", class: "img" %>
+  </div>
+
+  <div class="semi-title"><h2>資格</h2>
+    <h3>基本情報技術者試験</h3>
+    - 12月25日に受験し、A問題・B問題ともに基準点越え。<br>
+    1月に合格発表見込み
+  </div>
 </div>
