@@ -50,8 +50,8 @@ body {
 
 
 .profile_img {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
 }
 
@@ -107,7 +107,11 @@ h3 {
 .flex{
   display: flex;
   justify-content: center;
+  width: 300px;
+  margin: 0 auto;
 }
+
+
 .flex div{
   width: 100px;
 }
@@ -206,4 +210,7 @@ div {
   }
   div {
     font-size: 20px;
+  }
+  .top-introduction {
+    padding: 20px;
   }
