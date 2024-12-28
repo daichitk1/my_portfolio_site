@@ -166,6 +166,7 @@ div {
   }
   .top-introduction {
     min-height: 30vh;
+    background-size: cover;
   }
   .introduction-class {
     width:30px;
