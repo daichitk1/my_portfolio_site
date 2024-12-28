@@ -214,3 +214,72 @@ div {
   .top-introduction {
     padding: 20px;
   }
+
+  @media (max-width: 400px){
+    .semi-title {
+      margin: 50px auto 0 auto;
+    }
+    .main {
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px;
+    }
+    .top-introduction {
+      min-height: 15vh;
+      background-size: cover;
+    }
+    .introduction-class {
+      width:30px;
+      height: 30px;
+      background-image: url('introduction_img.png');
+    }
+    .profile_img {
+      width: 0px;
+      height: 0px;
+    }
+    .hobby-content {
+      display:inline;
+      width: 150px;
+    }
+    .hobby {
+      width: 200px;
+      margin: 0 auto;
+    }
+    .hobby_img {
+      width: 200px;
+      border-radius: 70%;
+    }
+    h2 {
+      width: 100%;
+      padding: 0;
+      font-size: 30px;
+    }
+    .img {
+      width: 300px;
+    }
+    .semi-title {
+      padding: 0;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    .name {
+      font-size: 50px;
+    }
+    div {
+      font-size: 10px;
+    }
+    .top-introduction {
+      padding: 20px;
+    }
+    .sns_img {
+      width: 30px;
+      height: 30px;
+    }
+    .award-text {
+      font-size: 15px;
+    }
+    .hobby-text {
+      font-size: 15px;
+    }
+  
