@@ -58,29 +58,59 @@
      サーバー: heroku
   </div>
   </div>
-
-  <div class="semi-title"><h2 id="portofolio">ポートフォリオ</h2></div>
-
-  <div class="semi-title">
-    <h2 id="hobby">趣味</h2>
-    <h3><a href="https://cat-and-mountain.com/">blog</a></h3>
-    <h3>登山</h3>
-    <a href="https://yamap.com/users/3228085" target="_blank"><%= image_tag "IMG_3168.png", class: "hobby_img" %></a>
-    <h3>サイクリング</h3>
-    <h3>散歩</h3>
-  </div>
-
-
-  <div class="semi-title">
-    <h2>受賞歴</h2>
-    中学3年<br> 中体連県大会 800m 8位<br><br>
-    大学1年<br> ジャグリング新人戦東日本杯 3位
-    <%= image_tag "IMG_6389.jpg", class: "img" %>
-  </div>
-
   <div class="semi-title"><h2>資格</h2>
     <h3>基本情報技術者試験</h3>
     - 12月25日に受験し、A問題・B問題ともに基準点越え。<br>
     1月に合格発表見込み
   </div>
+
+  <div class="semi-title"><h2 id="portofolio">ポートフォリオ</h2></div>
+
+  <div class="semi-title">
+    <h2 id="hobby">趣味</h2>
+      <div class="hobby-content">
+        <div class="hobby">
+        <h3>登山</h3>
+        <div class="hobby-text">
+          自然が好きで、2024年は休日に多く山に登りました！<br>
+          前に進むにつれ、徐々に見える景色が変わっていく感じや山頂に登った時の達成感がたまらなく好きです。<br>
+          2024年登った山: 富士山、雲取山、大菩薩嶺など
+        </div>
+        </div>
+        <a href="https://yamap.com/users/3228085" target="_blank"><%= image_tag "IMG_3168.png", class: "hobby_img" %></a>
+      </div>
+      <div class="hobby-content">
+        <%= image_tag "IMG_4328.png", class: "hobby_img" %>
+        <div class="hobby">
+          <h3>サイクリング</h3>
+          <div class="hobby-text">
+            東京都内の様々なところにサイクリングに行くことがよくあります<br>
+            特に、都立庭園や公園、夜景スポットなどに行くことが多くあります。<br>
+            今年の目標はロードバイクで100kmサイクリングをすることです。
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="semi-title">
+    <h2>受賞歴</h2>
+    <h3>中体連県大会 800m 8位</h3>
+    <div class="award-text">
+      陸上の800mで、予選を全体4位通過し決勝に進出しました。<br>
+      その後、決勝では、8位に入賞しました。<br>
+      予選、決勝ともに今までの自己ベストを更新し、大きな自信がつきました。
+    </div>
+    <h3>ジャグリング新人戦東日本杯 3位</h3>
+    <div class="award-text">
+      ジャグリング歴1年未満の人が参加できる大会で<br>
+      大学一年生の時に入賞しました。<br>
+      <%= image_tag "IMG_6389.jpg", class: "img" %>
+    </div>
+  </div>
+  <div class="semi-title">
+    <h2>部活・サークル</h2>
+    中学 陸上 800m、1500m、2年夏から3年夏まで副部長<br>
+    高校 陸上 800m、1500m 2年夏から3年夏まで中距離ブロック長<br>
+    大学 大道芸サークル 2年秋から3年秋まで部長
 </div>

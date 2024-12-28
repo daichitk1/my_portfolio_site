@@ -16,31 +16,32 @@
   src: url('../fonts/KleeOne-Regular.ttf');
 }
 .top-introduction {
-  background-image: url('color-background.png');
+  background-image: url('IMG_5482.png');
   text-align: center;
   margin: 0 auto;
-  width: 100%;
-  padding-top: 100px;
-
+  min-height: 100vh;
+  background-size: cover;
+  padding-top: 50px;
 }
 .introduction  {
   margin: 0 auto;
-  width: 100%;
 }
  .name {
   font-family: 'Sacramento', cursive;
-  font-size: 80px;
+  font-size: 120px;
   margin: 0;
  }
  .introduction-class {
-    width:200px;
-    height: 200px;
+    width:250px;
+    height: 250px;
     background-image: url('introduction_img.png');
   }
 
 .main {
   text-align: center;
   margin: 0 auto;
+  background-color: #e7fcfe;
+  padding-bottom: 100px;
 }
 
 body {
@@ -78,13 +79,12 @@ h2:after {
 }
 
 h3 {
-  color: blue;
+  color: rgb(106, 106, 250);
 }
 
 .hobby_img {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
+  width: 600px;
+  border-radius: 70%;
 }
 
 .hobby_img:hover {
@@ -93,8 +93,6 @@ h3 {
 
 .semi-title {
   margin: 50px auto 0 auto;
-  width: 500px;
-  background-color: #badffe;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -132,6 +130,25 @@ h4 {
   width: 500px;
 }
 
+.hobby-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hobby {
+  width: 500px;
+}
+
+.hobby-text {
+  font-size: 20px;
+}
+
+.award-text {
+  font-size: 20px;
+}
 
 
 @media (max-width: 700px){
@@ -143,6 +160,3 @@ h4 {
     text-align: center;
     width: 500px;
   }
-  semi-title {
-    width: 400px;
-}
