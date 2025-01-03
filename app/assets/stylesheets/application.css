@@ -117,11 +117,10 @@ h3 {
 }
 
 .prog {
-  background-color: #edf8fb;
-  border: 2px solid #3498db;
-  border-radius: 15px;
-  margin: 20px auto 20px auto;
-  width: 300px;
+
+  text-align: left;
+  margin: 0 auto;
+  max-width: 250px;
 }
 
 h4 {
