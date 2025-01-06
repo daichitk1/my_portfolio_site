@@ -6,7 +6,7 @@ const semi_title = document.querySelectorAll('.semi-title');
 const showTitle = (entries) => {
     const keyframes = {
         opacity: [0, 1],
-        translate: ['0 400px', 1],
+        translate: ['100px 0', 1],
     };
     const options = {
         duration: 1000,
