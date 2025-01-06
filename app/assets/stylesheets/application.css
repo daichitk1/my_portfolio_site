@@ -52,21 +52,39 @@
 
 .side-bar {
   position: fixed;
-  right: 50px;
+  right: 150px;
   bottom: 300px;
+  opacity: 1;
+  z-index: 5000;
   font-size: 20px;
-  z-index: 1;
   background-color: rgb(255, 255, 255);
+}
+
+.on-side-bar {
+  opacity: 0;
 }
 
 #top-btn {
   position: fixed;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   z-index: 5000;
   right: 30px;
   border-radius: 50%;
   bottom: 30px;
+}
+#menu-btn {
+  position: fixed;
+  width: 140px;
+  height: 140px;
+  z-index: 5000;
+  right: 30px;
+  border-radius: 50%;
+  bottom: 180px;
+}
+
+#menu-btn:hover {
+  background-color: rgb(255, 252, 192);
 }
 
 #top-btn:hover {
@@ -96,8 +114,6 @@ body {
   font-size: 30px;
   background-color: #dbfafc;
 }
-
-
 
 .profile_img {
   width: 300px;

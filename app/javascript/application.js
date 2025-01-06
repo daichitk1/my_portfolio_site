@@ -30,3 +30,9 @@ btn.addEventListener("click", () =>{
         top: 0,
     });
 });
+
+const menu_btn = document.getElementById("menu-btn");
+const side_bar = document.querySelector('.on-side-bar');
+menu_btn.addEventListener("click", () =>{
+    side_bar.classList.toggle('on-side-bar');
+});
