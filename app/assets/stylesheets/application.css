@@ -10,12 +10,8 @@
  */
 
  @import url('https://fonts.googleapis.com/css?family=Sacramento');
- @font-face {
-  font-family: "kleeone";
-  src: url('../fonts/KleeOne-Regular.ttf');
-}
 .top-introduction {
-  background-image: url('IMG_5482.png');
+  background-image: url("/assets/IMG_5482-0741b2ff.png");
   text-align: center;
   margin: 0 auto;
   min-height: 100vh;
@@ -33,19 +29,65 @@
  .introduction-class {
     width:250px;
     height: 250px;
-    background-image: url('introduction_img.png');
+    background-image: url("/assets/introduction_img-29d8db3c.png");
   }
 
 .main {
   text-align: center;
-  background-color: rgb(234, 247, 252);
   margin: 0 auto;
 }
 
+.news-title{
+  font-family: 'Cherry Swash', cursive;
+  padding-left: 300px;
+  padding-top: 20px;
+}
+
+.news {
+  height: 450px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(173, 230, 245);
+}
+
+#top-btn {
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  z-index: 5000;
+  right: 30px;
+  border-radius: 50%;
+  bottom: 30px;
+}
+
+#top-btn:hover {
+  background-color: pink;
+}
+
+.news-item {
+  margin: 0 auto;
+  height: 360px;
+  width: 360px;
+}
+
+.your-class {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+}
+.news-harf {
+  background-color: rgb(173, 29, 29);
+  width: 360px;
+  height: 180px;
+
+}
 body {
   font-family: "kleeone";
   font-size: 30px;
+  background-color: #dbfafc;
 }
+
 
 
 .profile_img {
@@ -55,8 +97,10 @@ body {
 }
 
 h2 {
+  font-family: 'Cherry Swash', cursive;
+  font-size: 5px;
   position: relative;
-  padding: 1rem .5rem;
+  padding: 0;
   width: 500px;
   font-size: 50px;
   margin: 0 auto;
@@ -74,13 +118,23 @@ h2:after {
   background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
 }
 
+.content-text {
+  text-align: left;
+  margin: 0 auto;
+  font-size: 20px;
+  max-width: 400px;
+}
 h3 {
   color: rgb(106, 106, 250);
+  margin-bottom: 15px;
+  margin-top: 50px;
 }
 
 .hobby_img {
   width: 400px;
+  margin: 0 auto;
   border-radius: 70%;
+  padding-top: 30px;
 }
 
 .hobby_img:hover {
@@ -88,22 +142,21 @@ h3 {
 }
 
 .semi-title {
-  width: 100%;
-  z-index: 5000;
+  padding-top:100px;
+  padding-bottom: 200px;
+
 }
 
 .semi-title-1 {
-  background-color: white;
-  z-index: 5000;
-  padding-bottom: 200px;
-  padding-top: 100px;
+  background-color: rgb(250, 250, 250);
 }
 
-.semi-title-2 {
-  background-color: rgb(210, 242, 254);
-  z-index: 5000;
-  padding-bottom: 200px;
-  padding-top: 100px;
+
+
+.semi-title-3 {
+  background-color: rgb(214, 248, 245);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .sns_img {
@@ -128,7 +181,6 @@ h3 {
 }
 
 .prog {
-
   text-align: left;
   margin: 0 auto;
   max-width: 250px;
@@ -146,11 +198,12 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 400px;
 }
 
 .hobby {
-  width: 500px;
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .hobby-text {
@@ -179,7 +232,7 @@ div {
   .introduction-class {
     width:30px;
     height: 30px;
-    background-image: url('introduction_img.png');
+    background-image: url("/assets/introduction_img-29d8db3c.png");
   }
   .profile_img {
     width: 100px;
@@ -224,14 +277,13 @@ div {
     padding: 20px;
   }
 
-  @media (max-width: 400px){
+  @media (max-width: 600px){
     .semi-title {
       margin: 50px auto 0 auto;
     }
     .main {
       margin: 0 auto;
       text-align: center;
-      padding: 10px;
     }
     .top-introduction {
       min-height: 15vh;
@@ -240,7 +292,7 @@ div {
     .introduction-class {
       width:30px;
       height: 30px;
-      background-image: url('introduction_img.png');
+      background-image: url("/assets/introduction_img-29d8db3c.png");
     }
     .profile_img {
       width: 0px;
@@ -268,9 +320,6 @@ div {
     .semi-title {
       padding: 0;
     }
-
-    
-
     h3 {
       font-size: 25px;
     }
@@ -293,5 +342,38 @@ div {
     .hobby-text {
       font-size: 20px;
     }
-  }
+    .content-text {
+      font-size: 16px;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+    #top-btn {
+      width: 80px;
+      height: 80px;
+      font-size: 10px;
+      right: 50px;
+      bottom: 50px;
+    }
+
+    .news-title{
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+
+    .main {
+      padding: 0;
+    }
+
+    .your-class {
+      padding: 0;
+      margin: 0;
+    }
+    .news-harf {
+      width: 100%;
+   }
+ }
 }

@@ -23,4 +23,10 @@ semi_title.forEach((one_title)=> {
     titleObserver.observe(one_title);
 });
 
+const btn = document.getElementById("top-btn");
 
+btn.addEventListener("click", () =>{
+    window.scroll({
+        top: 0,
+    });
+});
