@@ -38,8 +38,8 @@
 
 .main {
   text-align: center;
+  background-color: rgb(234, 247, 252);
   margin: 0 auto;
-  padding-bottom: 100px;
 }
 
 body {
@@ -70,7 +70,6 @@ h2:after {
   height: 6px;
   content: '';
   border-radius: 3px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#2af598), to(#009efd));
   background-image: -webkit-linear-gradient(right, #2af598 0%, #009efd 100%);
   background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
 }
@@ -90,18 +89,21 @@ h3 {
 
 .semi-title {
   width: 100%;
-  padding-bottom: 200px;
-  padding-top: 100px;
+  z-index: 5000;
 }
 
 .semi-title-1 {
   background-color: white;
   z-index: 5000;
+  padding-bottom: 200px;
+  padding-top: 100px;
 }
 
 .semi-title-2 {
   background-color: rgb(210, 242, 254);
   z-index: 5000;
+  padding-bottom: 200px;
+  padding-top: 100px;
 }
 
 .sns_img {
@@ -143,9 +145,8 @@ h4 {
 .hobby-content {
   display: flex;
   justify-content: space-between;
-  padding: 50px;
-  width: 1200px;
   margin: 0 auto;
+  max-width: 400px;
 }
 
 .hobby {
