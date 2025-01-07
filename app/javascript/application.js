@@ -4,14 +4,13 @@ import "controllers"
 const semi_title = document.querySelectorAll('.semi-title');
 
 const showTitle = (entries) => {
-    const keyframes = {
-        opacity: [0, 1],
-        translate: ['100px 0', 1],
-    };
+    const keyframes = [
+        { opacity: 0, transform: 'translate(200px, 0)' },
+        { opacity: 1, transform: 'translate(0, 0)' }
+    ];
     const options = {
-        duration: 1000,
+        duration: 2000,
         fill: 'forwards',
-        rootMargin: '-10px',
         threshold: 0,
     };
     entries[0].target.animate(keyframes, options);

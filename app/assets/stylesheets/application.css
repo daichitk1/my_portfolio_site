@@ -52,11 +52,12 @@
 
 .side-bar {
   position: fixed;
-  right: 150px;
-  bottom: 300px;
+  right: 50px;
+  bottom: 400px;
+  padding: 10px;
   opacity: 1;
   z-index: 5000;
-  font-size: 20px;
+  font-size: 30px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -175,7 +176,7 @@ h3 {
 
 .semi-title {
   padding-top:100px;
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 
 }
 
@@ -254,9 +255,15 @@ div {
     z-index: 0;
     display: none;
   }
+  .on-side-bar {
+    opacity: 0;
+  }
+  #menu-btn {
+    opacity: 0;
+  }
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
   .semi-title {
     margin: 50px auto 0 auto;
   }
