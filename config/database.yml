@@ -30,5 +30,6 @@ production:
   url: <%= ENV['DATABASE_URL'] %>
   queue:
     adapter: postgresql
-    database: myapp_queue_production
-  
+    database: your_app_queue_production
+    username: <%= ENV['DATABASE_USERNAME'] %>
+    password: <%= ENV['DATABASE_PASSWORD'] %>
