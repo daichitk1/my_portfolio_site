@@ -32,6 +32,3 @@ production:
     url: <%= ENV['DATABASE_URL'] %>
   queue:
     adapter: postgresql
-    database: your_queue_production_db
-    username: <%= ENV['DATABASE_USERNAME'] %>
-    url: <%= ENV['DATABASE_URL'] %>
