@@ -25,8 +25,7 @@ test:
 # is mounted as a persistent Docker volume in config/deploy.yml.
 production:
   adapter: postgresql
-  database: production_database_name # ここは適切なデータベース名に変更
-  username: your_postgres_username
-  pool: 5
-  timeout: 5000
+  database: MyApp_production
+  username: MyApp
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %> 
   
