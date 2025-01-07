@@ -30,3 +30,7 @@ production:
     database: MyApp_production
     username: MyApp
     url: <%= ENV['DATABASE_URL'] %>
+  queue:
+    adapter: postgresql
+    database: MyApp_1_queue
+    username: MyApp_1
