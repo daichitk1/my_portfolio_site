@@ -25,5 +25,5 @@ test:
 # is mounted as a persistent Docker volume in config/deploy.yml.
 production:
   adapter: postgresql
-  database: storage/production.sqlite3
+  database: storage/production.postgresql
   
