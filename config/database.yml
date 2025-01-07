@@ -27,8 +27,6 @@ production:
   adapter: postgresql
   database: production_database_name # ここは適切なデータベース名に変更
   username: your_postgres_username
-  password: <%= ENV['DATABASE_PASSWORD'] %> # 環境変数を使う場合
-  host: localhost # 必要に応じてホストを指定
   pool: 5
   timeout: 5000
   
