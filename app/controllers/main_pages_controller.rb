@@ -1,5 +1,4 @@
 class MainPagesController < ApplicationController
-
   # GET /main_pages or /main_pages.json
   def index
     @main_pages = MainPage.all
