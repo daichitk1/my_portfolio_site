@@ -1,43 +1,19 @@
 require "application_system_test_case"
 
 class MainPagesTest < ApplicationSystemTestCase
-  setup do
-    @main_page = main_pages(:one)
+  test "visiting the root shows the personal profile and social links" do
+    visit root_url
+    assert_selector "h1", text: "Daichi Takei"
+    assert_selector 'a[href="https://github.com/daichitk1"]'
+    assert_selector 'a[href="https://x.com/CqbsAuCgYY51036"]'
   end
 
-  test "visiting the index" do
+  test "index navigation leads to the skills section" do
     visit main_pages_url
-    assert_selector "h1", text: "Main pages"
-  end
-
-  test "should create main page" do
-    visit main_pages_url
-    click_on "New main page"
-
-    fill_in "Body", with: @main_page.body
-    fill_in "Title", with: @main_page.title
-    click_on "Create Main page"
-
-    assert_text "Main page was successfully created"
-    click_on "Back"
-  end
-
-  test "should update Main page" do
-    visit main_page_url(@main_page)
-    click_on "Edit this main page", match: :first
-
-    fill_in "Body", with: @main_page.body
-    fill_in "Title", with: @main_page.title
-    click_on "Update Main page"
-
-    assert_text "Main page was successfully updated"
-    click_on "Back"
-  end
-
-  test "should destroy Main page" do
-    visit main_page_url(@main_page)
-    click_on "Destroy this main page", match: :first
-
-    assert_text "Main page was successfully destroyed"
+    assert_selector "h1", text: "Daichi Takei"
+    click_button "メニュー"
+    click_link "情報系スキル"
+    assert_current_path(main_pages_path) { |uri| uri.fragment == "information_skill" }
+    assert_selector "#information_skill", text: "情報系スキル"
   end
 end
